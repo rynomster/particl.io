@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Development &bull; Particl.io</title>
+    <!-- open:graph -->
+    <meta property="og:title" content="Particl Development Status Report" />
+    <meta property="og:description" content="Particl is an open source, decentralized privacy platform. Built for global person to person and business to person eCommerce." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://particl.io/development" />
+    <meta property="og:image" content="https://particl.io/img/particl-opengraph-sharing.jpg" />
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#03e8b0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#212727">
+    <meta name="author" content="Particl Project <hello@particl.io> (https://particl.io)">
+    <!-- styles & scripts -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="no-js">
+
+
+<div id="top">
+
+    <header role="banner">
+        <div class="row expand">
+            <div class="column">
+                <button id="menu-toggle">
+                    <i class="ico ico-menu"></i>
+                </button>
+                <div class="logo">
+                    <img src="img/particl-logo-light.svg" alt="Particl">
+                </div>
+            </div>
+        </div>
+    </header><!-- header -->
+
+    <nav role="navigation">
+        <ul>
+            <li><a href="index.html#intro">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="careers.html">Career</a></li>
+            <li><a href="development.html">Development</a></li>
+            <!--li><a class="scroll" href="index.html#part-token">Part Token</a></li-->
+            <li><a href="index.html#footer">Contact</a></li>
+            <li><a class="ext" href="https://github.com/particl/whitepaper/blob/master/decentralized-private-marketplace-draft-0.1.pdf">Whitepaper</a></li>
+            <li><a class="ext" href="https://particl.news">Blog</a></li>
+        </ul>
+    </nav><!-- nav -->
+
+</div><!-- #top -->
+
+
+<div id="page" role="main">
+    
+    <section id="page-title">
+        <div class="row">
+            <div class="column">
+                <h1 class="title">Particl Development Status Report - July 27, 2017</h1>
+            </div>
+        </div>
+    </section><!-- #page-title -->
+
+    <!--section id="legend">
+        <div class="row">
+            <div class="column">
+                Status Code Legend:
+            </div>
+            <div class="small-2 columns">
+                <div>Looking good</div>
+
+                <div>Starting to slip</div>
+
+                <div>Off track</div>
+            </div>
+            <div class="small-1 columns">
+                <div>-</div><div>-</div><div>-</div>
+            </div>
+            <div class="small-4 columns">
+                <div>All on track</div>
+
+                <div>We need to focus on this</div>
+
+                <div>We need all hands on deck</div>
+            </div>
+        </div>
+    </section> < - - #legend -->
+
+    <section id="c01" class="feature">
+        <div class="row">
+            <div class="column">
+                <h2>What needs urgent attention</h2>
+            </div>
+            <div class="large-12 columns">
+                <ul>
+                    <li>Release of TestNet5 – To Include GUI features</li>
+                    <li>UI Integration and GUI component items listed below will need to be completed to allow for this TestNet release</li>
+                    <li>UI Integration</li>
+                        <ul>
+                            <li>Identify RPC and API changes needed around UI Integration</li>
+                            <li>Headless browser</li>
+                                <ul>
+                                    <li>Setup electron test</li>
+                                    <li>Daemon tests</li>
+                                    <li>RPC Queuing - ZMQ</li>
+                                </ul>
+                            <li>GUI Components:</li>
+                                <ul>
+                                    <li>Address Book – Add Address</li>
+                                    <li>Screen Design implementation review and correct</li>
+                                    <li>Menu Animations</li>
+                                </ul>
+                        </ul>
+                </ul>
+            </div>
+            Developers are working on the above items. These seem to be a lot more complex than expected. We had to also cover changes to the Copay wallet that took up some time.
+        </div>
+    </section><!-- .feature -->
+
+    <section id="c02" class="feature">
+        <div class="row">
+            <div class="column">
+                <h2>What are we busy with:</h2>
+            </div>
+            <div class="large-12 columns">
+                <ul>
+                    <li>Upgrades to QT are being done, ensuring we cover everything</li>
+                    <li>Passphrase on bip39 tool had encoding issues that are being tested</li>
+                    <li>Testing, Bug fixes, CT being looked at on the backend for integration with GUI</li>
+                    <li>Business Plan - Market place</li>
+                    <li>Exchange engagement – Listed on Bittrex</li>
+                </ul>
+            </div>
+            <b>It seems all Exchanges are holding of on doing much until 1 August. Following the BTC fork, we should receive feedback on further engagement.</b>
+        </div>
+    </section><!-- .feature -->
+
+    <section id="c03" class="feature">
+        <div class="row">
+            <div class="column">
+                <h2>What’s waiting for Review:</h2>
+            </div>
+            <div class="large-12 columns">
+                <ul>
+                    <li>GUI Components:</li>
+                    <ul>
+                        <li>RPC Service</li>
+                        <li>HD wallet import and generate mnemonic seed</li>
+                        <li>Syncing Modal Integration</li>
+                        <li>Send page changes</li>
+                        <li>Transaction Page – Design review</li>
+                        <li>Wallet loading screen design implementation</li>
+                    </ul>
+                    <li>Particl Style/Branding guidelines</li>
+                    <li>Plan, estimate and release Particl Roadmap</li>
+                </ul>
+            </div>
+            <b>Roadmap design done and awaiting approval on dates, design etc.</b>
+        </div>
+    </section><!-- .feature -->
+
+    <section id="c04" class="feature">
+        <div class="row">
+            <div class="column">
+                <h2>What has been wrapped up:</h2>
+            </div>
+            <div class="large-12 columns">
+                <ul>
+                    <li>Portal Admin interface</li>
+                    <li>Portal Admin Interface for Manual Payments</li>
+                    <li>Copay Multisig / BWS / BWC</li>
+                    <li>PART distribution</li>
+                </ul>
+            </div>
+        </div>
+    </section><!-- .feature -->
+</div><!-- #page -->
+
+
+<footer id="footer">
+    <div class="row">
+
+        <div class="logo large-4 columns">
+            <img src="img/particl-logo-dark.svg" alt="Particl.io">
+        </div><!-- .logo -->
+
+        <div class="navigation part small-6 medium-4 large-2 columns">
+            <h4 class="title">Navigation</h4>
+            <ul>
+                <li><a class="scroll" href="#about">About</a></li>
+                <li><a class="scroll" href="#team">Team</a></li>
+                <li><a class="scroll" href="#part-token">Part Token</a></li>
+                <li><a class="ext" href="https://github.com/particl/whitepaper/blob/master/decentralized-private-marketplace-draft-0.1.pdf">Whitepaper</a></li>
+            </ul>
+        </div><!-- .navigation -->
+
+        <div class="links part small-6 medium-4 large-2 columns">
+            <h4 class="title">Links</h4>
+            <ul>
+                <li><a class="ext" href="https://particl.news">Blog</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a class="ext" href="https://www.reddit.com/r/Particl/wiki/faq">FAQ</a></li>
+                <li><a class="ext" href="https://github.com/particl">GitHub</a></li>
+                <li><a class="ext" href="https://explorer.particl.io">Block Explorer</a></li>
+            </ul>
+        </div><!-- .links -->
+
+        <div class="social-links part medium-4 large-2 columns">
+            <h4 class="title">Social</h4>
+            <ul>
+                <li><a class="ext" href="https://twitter.com/particlproject">Twitter</a></li>
+                <!--li><a class="ext" href="#">Facebook</a></li-->
+                <li><a class="ext" href="https://reddit.com/r/particl">Reddit</a></li>
+                <li><a class="ext" href="https://plus.google.com/b/108803931280926365728/108803931280926365728">Google+</a></li>
+                <li><a class="ext" href="https://particl.slack.com">Slack</a></li>
+                <li><a class="ext" href="http://slack.particl.io">Slack invite</a></li>
+                <li><a class="ext" href="https://riot.im/app/#/room/#particl:matrix.org">RIOT</a></li>
+            </ul>
+        </div><!-- .social-links -->
+
+        <div class="contact large-2 columns">
+            <div class="social-buttons">
+                <!--a href="#" class="button"><i class="ico ico-facebook"></i></a-->
+                <a href="https://twitter.com/particlproject" class="button"><i class="ico ico-twitter"></i></a>
+                <a href="https://reddit.com/r/particl" class="button"><i class="ico ico-reddit-alt"></i></a>
+            </div>
+            <div class="contact-email">
+                <i class="ico ico-email"></i><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;hello&#64;&#112;&#97;&#114;&#116;&#105;&#99;&#108;&#46;&#105;&#111;">hello&#64;&#112;&#97;&#114;&#116;&#105;&#99;&#108;&#46;&#105;&#111;</a>
+            </div>
+        </div><!-- .contact -->
+
+
+        <div class="copyright column">
+            <hr>
+            &copy; 2017 Particl
+        </div><!-- .copyright -->
+
+    </div>
+</footer><!-- footer -->
+
+
+<!--div class="respo">
+    <div class="size xs">xs</div>
+    <div class="size s">s</div>
+    <div class="size m">m</div>
+    <div class="size t">t</div>
+    <div class="size l">l</div>
+    <div class="size xl">xl</div>
+</div-->
+
+    <script src="js/all.js"></script>
+</body>
+</html>
